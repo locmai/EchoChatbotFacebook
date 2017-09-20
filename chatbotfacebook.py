@@ -7,8 +7,8 @@ from Chatbot.demobot import chatbot
 
 app = Flask(__name__)
 
-ACCESS_TOKEN = os.environ.get('FB_PAGE_ACCESS_TOKEN', 'conf_this')
-VERIFY_TOKEN = os.environ.get('FB_PAGE_VERIFY_TOKEN', 'conf_this')
+ACCESS_TOKEN = os.environ.get('FB_PAGE_ACCESS_TOKEN')
+VERIFY_TOKEN = os.environ.get('FB_PAGE_VERIFY_TOKEN')
 
 
 def reply(user_id, msg):
